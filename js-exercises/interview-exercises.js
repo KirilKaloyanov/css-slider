@@ -12,12 +12,16 @@ console.log(animal.breed);
 Person.prototype.age = 22;
 console.log(Person.prototype);
 
-let a = () => 5 + 6;
-
-let smt = () => {
-    9+0;
+function s() {
+    let a = 1;
+    return function () {
+        a++;
+        console.log(a);
+    }
 }
 
-let b = a;
-
-console.log(a());
+let j = s();
+let f = s();
+j();
+j();
+f();
