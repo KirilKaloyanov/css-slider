@@ -5307,7 +5307,7 @@
      ```javascript
      //Without nesting templates
       const iconStyles = `icon ${ isMobilePlatform() ? '' :
-       (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
+       (user.isAuthorized ? 'icon-submit' : 'icon-disabled')}`;
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
